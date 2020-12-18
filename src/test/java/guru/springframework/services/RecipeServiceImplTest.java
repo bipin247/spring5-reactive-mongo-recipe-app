@@ -104,8 +104,6 @@ public class RecipeServiceImplTest {
         //when
         recipeService.deleteById(idToDelete);
 
-        //no 'when', since method has void return type
-
         //then
         verify(recipeReactiveRepository, times(1)).deleteById(anyString());
     }

@@ -17,4 +17,12 @@ public class UnitOfMeasure {
     @Id
     private String id;
     private String description;
+
+    @Override
+    public String toString() {
+        return "UnitOfMeasure{" +
+                "id='" + id + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
